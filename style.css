@@ -1,0 +1,147 @@
+/* ===== Akanksha's Portfolio - Brown & Beige Pinterest Aesthetic ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --beige: #f8f3ed;
+  --cream: #fffaf5;
+  --light-brown: #e3c9af;
+  --dark-brown: #5b4032;
+  --accent: #b08563;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--beige);
+  color: var(--dark-brown);
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #f2e1d3, #e8cdb1);
+  text-align: center;
+  padding: 70px 20px;
+  border-bottom: 3px solid #d8bda3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 40px 40px;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  color: var(--dark-brown);
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+header p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
+  color: #4b3829;
+  margin-top: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Navigation ===== */
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-brown);
+  margin: 0 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: var(--cream);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(100, 80, 60, 0.1);
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: var(--dark-brown);
+  margin-bottom: 15px;
+  border-left: 6px solid var(--accent);
+  padding-left: 10px;
+}
+
+section p {
+  font-size: 1.05em;
+  color: #4e3a2c;
+}
+
+/* ===== Project Cards ===== */
+.project-card {
+  background-color: #f9f4ee;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 8px;
+  color: var(--dark-brown);
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--dark-brown);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--light-brown);
+  color: var(--dark-brown);
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.95em;
+  margin-top: 60px;
+  border-top: 2px solid #d2b89e;
+  border-radius: 30px 30px 0 0;
+}
+
+/* ===== Fade Animation ===== */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-in-out;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
